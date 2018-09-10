@@ -1,0 +1,22 @@
+{
+  "addons": [],
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ],
+  "env": {
+    "OPENTOK_API_KEY": {
+      "description": "API key from OpenTok",
+      "required": true
+    },
+    "OPENTOK_SECRET": {
+      "description": "Secret from OpenTok",
+      "required": true
+    }
+  },
+  "formation": {},
+  "name": "incontact-demo",
+  "repository": "https://github.com/opentok/incontact-demo",
+  "scripts": {}
+}

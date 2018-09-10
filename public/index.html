@@ -1,0 +1,41 @@
+
+<html>
+    <head>
+      <meta charset="utf-8">
+      <link rel="stylesheet" href="//cdn.livechatinc.com/boilerplate/1.1.css">
+      <link rel="stylesheet" href="/css/style.css" type="text/css">
+    </head>
+    <body>
+    <div class="widget-container">
+      <div class="logo">
+        <img src="img/logo.png" class="logo-state2" />
+      </div>
+      <div class="state2">
+        <div class="input-container">
+            <div>
+              <span>Share Customer URL</span>
+              <label class="switch">
+                  <input type="checkbox" id="toggleClientVideo">
+                  <span class="slider round"></span>
+              </label>
+              <span class="tiny" id="clientVideoStatus">enable video</span>
+            </div>
+            <input type="text" id="clientUrl" class="input c-txt__input" value="loading url..." readonly />
+                <div class="btn" id="copy" data-clipboard-target="#clientUrl" title="Copy link to the text chat" >Copy URL</div>
+        </div>
+
+        <div class="input-container margin19">
+          <div id="agentScreen"></div>
+        </div>
+      </div>
+    </div>
+      <script type="text/javascript" src="https://assets.zendesk.com/apps/sdk/2.0/zaf_sdk.js"></script>
+      <script src="https://cdn.jsdelivr.net/jquery/3.2.1/jquery.min.js"></script>
+      <script src="https://unpkg.com/@livechat/livechat-visitor-sdk@0.34.0/dist/livechat-visitor-sdk.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+      <script type="text/javascript" src="/js/main.js"></script>
+      <script>
+      new ClipboardJS('#copy');
+      </script>
+    </body>
+    </html>
